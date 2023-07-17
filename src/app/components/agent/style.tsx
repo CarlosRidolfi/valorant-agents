@@ -54,17 +54,16 @@ export const AgentIcon = styled.button`
 `
 
 export const AgentImage = styled.div`
-    img[animation='1'] {
-        animation: slide 1s forwards;       
-        
+    #imgwrapper[data-animation='1'] {
+        animation: slide 1s forwards;    
+    }
 
-        @keyframes slide {
-            0% {
-                transform: translateX(-50px);
-            }
-            100% {
-                transform: translateX(0px);
-            }
+    @keyframes slide {
+        0% {
+            transform: translateX(-50px);
+        }
+        100% {
+            transform: translateX(0px);
         }
     }
 `

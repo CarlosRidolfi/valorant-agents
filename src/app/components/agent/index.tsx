@@ -13,7 +13,7 @@ interface Agent {
 }
 
 export default function Agent() {
-    const [agentInfo, setAgentInfo] = React.useState<Agent>(agentsList[0])
+    const [agentInfo, setAgentInfo] = React.useState(agentsList[0])
     const [agentImage, setAgentImage] = React.useState<string>(agentsList[0].image)
     const [animation, setAnimation] = React.useState<number>(0)
 
@@ -40,14 +40,14 @@ export default function Agent() {
                     }
                 </AgentsSelectorsWrapper>
                 <AgentImage>
-                    <img 
-                        src={agentImage}
-                        width={550}
-                        height={900}
-                        alt='agent'
-                        animation={animation}
-                        onAnimationEnd={() => setAnimation(0)}
-                    />
+                    <div id='imgwrapper' data-animation={animation} onAnimationEnd={() => setAnimation(0)}>
+                        <Image 
+                            src={agentImage}
+                            width={550}
+                            height={900}
+                            alt='agent'
+                        />
+                    </div>
                 </AgentImage>
                 <AgentInfoWrapper>
                     <AgentName>{agentInfo.name}</AgentName>
