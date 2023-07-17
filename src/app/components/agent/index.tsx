@@ -40,7 +40,7 @@ export default function Agent() {
                     }
                 </AgentsSelectorsWrapper>
                 <AgentImage>
-                    <Image 
+                    <img 
                         src={agentImage}
                         width={550}
                         height={900}
