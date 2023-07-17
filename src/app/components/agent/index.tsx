@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import Image from 'next/image'
 import { agentsList } from './agents'
 import { Container, Wrapper, AgentsSelectorsWrapper, AgentIcon, AgentImage, AgentInfoWrapper, AgentName, AgentFunction, AgentStory, HorizontalLine } from './style'
@@ -17,11 +17,12 @@ export default function Agent() {
     const [agentImage, setAgentImage] = React.useState<string>(agentsList[0].image)
     const [animation, setAnimation] = React.useState<number>(0)
 
-    const setAgent = (agent: Agent) => {
+    const setAgent = useCallback((agent: Agent) => {
         setAgentInfo(agent)
         setAgentImage(agent.image)
         setAnimation(1)
-    }
+    }, []);
+
     
     return (
         <Container>
