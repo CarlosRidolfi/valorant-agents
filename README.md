@@ -1,8 +1,8 @@
-<h1>Valorant Agents</h1>
-<h2>This is a web app made to display Valorant agents</h2>
-<h2>How to run this project:</h2>
-<ul>
-  <li>Clone the repository</li>
-  <li>Run npm install</li>
-  <li>Run npm run dev</li>
-</ul>
+# Valorant Agents Web App
+![Screenshot 2023-07-22 100109](https://github.com/CarlosRidolfi/valorant-agents/assets/27232476/56975b3e-b3da-4786-b152-1b15b7fafb99)
+
+## How to Install
+### Clone the repo.
+### Run the npm install command.
+### Run the npm run dev command.
+
